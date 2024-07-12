@@ -1,0 +1,154 @@
+
+h1 {
+    align-items: center;
+    color: yellow;
+  }
+  
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    height: 1rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  button {
+    margin: 2px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  button:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .venue-list {
+    
+    margin-top: 20px;
+    display: flex;
+    flex-grow: inherit;
+    gap: 20px;
+  }
+  
+  .venue-item {
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+  }
+  
+  .venue-item h2 {
+    color: red;
+  }
+  
+  .venue-item button {
+    margin-right: 10px;
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+    max-width: 20rem;
+  }
+
+  .modal-content {
+  background-color: black;
+  padding: 20px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .venue-item {
+    flex: 1 1 calc(100% - 40px);
+  }
+
+  .venue-item button {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  form {
+    gap: 5px;
+  }
+
+  input, button {
+    padding: 8px;
+  }
+
+  .venue-list {
+    flex-direction: column;
+  }
+
+  .venue-item {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .venue-item button {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+}
